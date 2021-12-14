@@ -10,10 +10,11 @@ import java.util.Arrays;
 
 public class Sorting {
 
-    private static final int[] array = {4, 1, 7, 5, -1, 10};
+    private static final int[] array = {-10, 4, 1, 7, 5, 100, -1,  10, -100};
 
     public static void main(String[] args) {
-        Selection.sort(array);
-        System.out.println(Arrays.toString(array));
+
+        int[] sort = MergeSort.sort(array);
+        System.out.println(Arrays.toString(sort));
     }
 }
